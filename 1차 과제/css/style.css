@@ -1,0 +1,419 @@
+:root {
+	
+}
+
+*
+{
+  font-family: 'Metrophobic', Arial, serif; font-weight: 400;
+}
+
+
+@font-face {
+	font-family: "jua";
+	src: url(../fonts/BMJUA_ttf.ttf);
+}
+html 
+{
+	scroll-behavior: smooth;
+}
+body 
+{
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar
+{
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+}
+
+.navbar-logo a{
+	font-size: 20px;
+	padding-left: 20px;
+	font-weight: 600;
+}
+.navbar-menu {
+	display: flex;
+	list-style: none;
+	padding-left: 0;
+}
+.navbar-menu li {
+	padding: 8px 12px;
+}
+.navbar-menu li :hover {
+	color: rgb(255, 102, 0);
+}
+.navbar-toggleBtn {
+	display: none;
+	position : absolute;
+	right: 32px;
+	font-size: 24px;
+	color: rgb(255, 102, 0); 
+}
+
+@media screen and (max-width: 768px) {
+	.navbar
+	{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.navbar-menu {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		width:100%
+	}
+	.navbar-logo {
+		padding: 10px 10px;
+	}
+
+	.navbar-menu li {
+		width: 100%;
+		text-align: center;
+	}
+	.navbar-toggleBtn {
+		display: block;
+		padding: 10px 10px;
+	}
+
+	.navbar-menu.active {
+		display: flex;
+	}
+}
+
+
+section
+{
+	height: 100vh;
+}
+
+.mainpage
+{
+	color: white;
+	background: linear-gradient( rgba(252, 252, 252, 0.1), 
+	rgba(252, 252, 252, 0.1) ),url(../images/tent-gd319add57_1920.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.mainheader
+{
+	position: relative;
+	font-family: 'Dela Gothic One', cursive;
+	height: 300px;
+	width: 50%;
+	top: 30%;
+	left: 10%;
+
+}
+.maincamping
+{
+	font-size: 90px;
+	font-weight: 1000;
+}
+.subheader
+{
+	position : absolute;
+	font-size: 25px;
+	font-weight: 300;
+	top: 45%;
+}
+.main-box
+{
+	position: absolute;
+	text-decoration: none;
+	left: 50%;
+	top: 45%;
+	text-align: center;
+	border-radius: 50px;
+	width: 20%;
+	background-color: rgba(255, 255, 255, 0.932);
+
+}
+
+.main-box a
+{
+	display: block;
+	color: black;
+	font-size: 17px;
+	padding: 8px 15px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+.main-box a:hover:not(.active) {
+	color: rgb(255, 102, 0);
+}
+@media screen and (max-width: 768px) {
+	.maincamping
+	{
+		font-size: 35px;
+		font-weight: 800;
+	}
+	.subheader
+	{
+		font-size: 10px;
+		font-weight: 400;
+		margin-top: -50px;
+	}
+	.main-box
+	{
+		position: absolute;
+		text-decoration: none;
+		left: 0%;
+		top: 40%;
+		border-radius: 5px;
+		width: 30%;
+		background-color: rgba(255, 255, 255, 0.932);
+
+	}
+
+	.main-box a
+	{
+		display: block;
+		margin: 3px 0;
+		padding: 0;
+		color: black;
+		font-size: 5px;
+		text-decoration: none;
+	}
+}
+
+@media screen and (min-width: 770px) and (max-width: 1228px) {
+	.maincamping
+	{
+		font-size: 53px;
+		font-weight: 800;
+	}
+	.subheader
+	{
+		font-size: 15px;
+		font-weight: 400;
+		margin-top: -50px;
+	}
+	.main-box
+	{
+		position: absolute;
+		text-decoration: none;
+		left: 0%;
+		top: 40%;
+		text-align: center;
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 0.932);
+
+	}
+
+	.main-box a
+	{
+		display: block;
+		color: black;
+		font-size: 10px;
+		margin: 5px;
+		padding: 0;
+		text-decoration: none;
+	}
+}
+
+.aboutpage 
+{
+	height: 300vh;
+}
+
+.aboutpage
+{
+	background: linear-gradient( rgba(252, 252, 252, 0.9), 
+	rgba(252, 252, 252, 0.9) ),url(../images/about/back.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-bottom: -100px;
+}
+
+.aboutpage p{
+	color: rgb(78, 78, 78);
+	margin: 0 auto;
+	width: 60%;
+	font-size: 30px;
+	font-family: "jua";
+	padding-bottom: 10px;
+}
+.abouth1
+{
+	color: black;
+	font-size: 60px;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	padding-top: 75px;
+	font-family: 'Playfair Display', serif;
+
+}
+
+.box-about1{
+	position: relative;
+	float: left;
+	box-sizing: border-box;
+	margin-left: 20%;
+	width: 55%;
+	height: 30%;
+	background-image: url(../images/about/1.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+.box-about1-1{
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+	color: black;
+	width: 5%;
+	height: 10%;
+	margin: 0;
+}
+.box-about1-1 header
+{
+	font-family: 'Playfair Display', serif;
+	font-size: 40px;
+	font-weight: b;
+	color: black;
+	margin: 0;
+	margin-top: 10px;
+	writing-mode: vertical-lr;
+}
+
+.box-about1-1 p
+{
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	color: black;
+	margin: 0;
+	margin-left: 5px;
+	margin-top: 10px;
+	writing-mode: vertical-lr;
+}
+
+.box-about2{
+	clear: both;
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 60%;
+	height: 3%;
+	padding: 0 auto;
+	margin-top: 10px;
+}
+.box-about2 p
+{
+	width: 100%;
+	font-size: 16px;
+	font-weight: 550;
+	padding: 0;
+	padding-top: 5px;
+	color:rgb(126, 125, 125);
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.about-box-p1
+{
+	padding-top: 20px;
+}
+
+.equipmentpage
+{
+	background-color: white;
+	height: 150vh;
+	box-sizing: border-box;
+}
+
+
+.equipment-h1
+{
+	color: black;
+	font-size: 60px;
+	text-align: center;
+	padding: 20px;
+	padding-top: 50px;
+	font-family: 'Playfair Display', serif;
+	margin: 0;
+	
+}
+
+.equipment-p1{
+	color: rgb(78, 78, 78);
+	margin: 0 auto;
+	font-size: 30px;
+	font-family: "jua";
+	text-align: center;
+	margin-top: 20px;
+}
+.equipment-name-1f
+{
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+.equipment-namebox-1f
+{
+	display: flex;
+	width: 25%;
+	margin: 0 60px;
+}
+.equipment-namebox-1f h1 {
+	font-size: 20px;
+	font-family: "jua";
+	color: rgb(78, 78, 78);
+	align-items: center;
+	margin: 0 auto;
+}
+.equipment-image-1f
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.equipment-image-1f-box
+{
+	display: flex;
+	width: 25%;
+	margin: auto 60px;
+}
+
+
+
+
+.foodh1
+{
+	color: black;
+	font-size: 60px;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	padding-top: 50px;
+	font-family: 'Playfair Display', serif;
+
+}
+
+.campsiteh1
+{
+	color: black;
+	font-size: 60px;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	padding-top: 50px;
+	font-family: 'Playfair Display', serif;
+
+}
+
