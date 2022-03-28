@@ -99,3 +99,24 @@ html {
 	clear: both;
 	display: table;
 }
+
+.equipment-name-1f
+{
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+.equipment-namebox-1f
+{
+	display: flex;
+	width: 25%;
+	margin: 0 60px;
+}
+.equipment-namebox-1f h1 {
+	font-size: 20px;
+	font-family: "jua";
+	color: rgb(78, 78, 78);
+	align-items: center;
+	margin: 0 auto;
+}
+transform: translate( -50%, -50% );
