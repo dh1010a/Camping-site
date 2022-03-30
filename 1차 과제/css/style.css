@@ -136,14 +136,14 @@ section
 	position : absolute;
 	font-size: 30px;
 	font-weight: 300;
-	top: 50%;
+	top: 55%;
 }
 .main-box
 {
 	position: absolute;
 	text-decoration: none;
 	left: 55%;
-	top: 50%;
+	top: 55%;
 	text-align: center;
 	border-radius: 50px;
 	width: 20%;
@@ -339,7 +339,7 @@ section
 .equipmentpage
 {
 	background-color: white;
-	height: 170vh;
+	height: 150vh;
 	box-sizing: border-box;
 }
 .equipment-h1
@@ -491,7 +491,7 @@ section
 {
 	width: 35%;
 	margin: 0 auto;
-	margin-left: 110px;
+	margin-left: 150px;
 	padding: 0 auto;
 	color: black;
 	float: left;
@@ -499,7 +499,7 @@ section
 }
 .food-1f-box-img
 {
-	width: 25%;
+	width: 15%;
 	height: 400px;
 	margin: 0 auto;
 	padding: 0 auto;
@@ -533,11 +533,50 @@ section
 	font-family: 'Noto Sans KR', sans-serif;
 	padding-top: 20px;
 }
+.food-2f {
+	clear: both;
+	margin-top: 50px;
+	margin-left: 150px;
+}
+.food-2f-box-img
+{
+	width: 30%;
+	height: 300px;
+	margin: 0 auto;
+	padding: 0 auto;
+	margin-top: 200px;
+	color: black;
+	float: left;
+}
+
+.food-2f-box-text
+{
+	width: 40%;
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0 auto;
+	margin-left: 110px;
+	padding: 0 auto;
+	color: black;
+	float: left;
+	margin-top: 200px;
+}
+.food-2f-title{
+	font-size: 30px;
+	font-weight: bold;
+	color:rgb(78, 78, 78);
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.food-2f-word{
+	font-size: 15px;
+	color: rgb(107, 105, 105);
+	font-family: 'Noto Sans KR', sans-serif;
+	padding-top: 20px;
+}
 
 
 .campsitepage
 {
-	height: 150vh;
+	height: 100vh;
 	background: linear-gradient( rgba(252, 252, 252, 0.7), 
 	rgba(252, 252, 252, 0.7) ),url(../images/campsite/back2.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
