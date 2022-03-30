@@ -120,3 +120,14 @@ html {
 	margin: 0 auto;
 }
 transform: translate( -50%, -50% );
+
+.equipment-h1
+{
+	color:rgb(255, 102, 0);
+	font-size: 60px;
+	text-align: center;
+	padding: 20px;
+	padding-top: 50px;
+	font-family: 'Playfair Display', serif;
+	margin: 0;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Camping Site</title>
+    <title>PDH's Camping Site</title>
     <link rel="stylesheet" href="css/style.css">
 	<script src="./js/scripts.js" defer></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,12 +13,13 @@
 	<script src="https://kit.fontawesome.com/f43b63211a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<!-- navbar -->
     <nav class= "navbar">
 		<div class= "navbar-logo">
 			<a href="#">Paek.D.H</a>
 		</div>
         <ul class="navbar-menu">
-			<li><a href="#">Home</a></li>
+			<li><a href="#" class="navbar-home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#equipment">Equipment</a></li>
             <li><a href="#food">Food</a></li>
@@ -28,6 +29,7 @@
 			<i class="fa-solid fa-bars"></i>
 		</a>
     </nav>
+	<!-- Main -->
 	<section class="mainpage" id="main">
 		<div class="mainheader">
 			<div class="maincamping">C a m p i n g</div>
@@ -51,33 +53,46 @@
 			<p class="about-box-p3">도시에서 지친 마음을 치유하고, 에너지를 채우는 여행.</p>
 		</div>
 	</section>
-	<!-- equipmen -->
+	<!-- equipment -->
 	<section class="equipmentpage" id="equipment">
 		<h1 class="equipment-h1"> Equipment </h1>
-		<p class="equipment-p1"> 캠핑 하면 빠질 수 없는 '장비' </p>
-		<div class="equipment-name-1f">
-			<div class="equipment-namebox-1f" >
-				<h1>텐트</h1>
-			</div>
-			<div class="equipment-namebox-1f">
-				<h1>테이블/의자</h1>
-			</div>
-			<div class="equipment-namebox-1f">
-				<h1>화로</h1>
-			</div>
-		</div>
+		<p class="equipment-p1"> 캠핑에 나만의 감성을 더해주는 '장비' </p>
 		<div class="equipment-image-1f">
-			<div class="equipment-image-1f-box">
-				<img src="./images/equipment/tent.jpg" alt="tent" style="width:100%">
-			</div>
-			<div class="equipment-image-1f-box">
-				<img src="./images/equipment/tent.jpg" alt="table" style="width:100%">
-			</div>
-			<div class="equipment-image-1f-box">
-				<img src="./images/equipment/tent.jpg" alt="chair" style="width:100%">
-			</div>
+			<a href="https://snowlinemall.com/product/list.html?cate_no=284" class="equipment-image-1f-box">
+				<p></p>
+				<h1>텐트</h1>
+				<img class="equipment-img-tent" src="./images/equipment/tent2.jpg" alt="tent" style="width:100%">
+			</a>
+			<a href="https://snowlinemall.com/?gclid=CjwKCAjwuYWSBhByEiwAKd_n_tZmBrTZlGKaKEG7Td_lPjZTzC78uYv2oxdB4kZNhHmcie_rk2iCyhoCIywQAvD_BwE"  class="equipment-image-1f-box">
+				<img src="./images/equipment/table.jpg" alt="table" style="width:100%">
+				<p></p>
+				<h1>테이블/의자</h1>
+			</a>
+			<a href="https://snowlinemall.com/?gclid=CjwKCAjwuYWSBhByEiwAKd_n_tZmBrTZlGKaKEG7Td_lPjZTzC78uYv2oxdB4kZNhHmcie_rk2iCyhoCIywQAvD_BwE"  class="equipment-image-1f-box">
+				<img src="./images/equipment/burn.jpg" alt="burner" style="width:100%">
+				<p></p>
+				<h1>화로</h1>
+			</a>
+		</div>
+		<div class="equipment-image-2f">
+			<a href="#" class="equipment-image-2f-box">
+				<img src="./images/equipment/dish2.jpg" alt="tent" style="width:100%">
+				<p></p>
+				<h1>조리도구</h1>			
+			</a>
+			<a href="#" class="equipment-image-2f-box">
+				<img src="./images/equipment/light.jpg" alt="table" style="width:100%">
+				<p></p>
+				<h1>조명</h1>
+			</a>
+			<a href="#" class="equipment-image-2f-box">
+				<img src="./images/equipment/ice box.jpg" alt="chair" style="width:100%">
+				<p></p>
+				<h1>아이스 박스</h1>
+			</a>
 		</div>
 	</section>
+	<!-- Food -->
 	<section class="foodpage" id="food">
 		<h1 class="foodh1"> Food </h1>
 	</section>
