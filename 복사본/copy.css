@@ -4,7 +4,7 @@
 
 *
 {
-  font-family: 'Metrophobic', Arial, serif; font-weight: 400;
+  font-family: 'Metrophobic', Arial, serif;font-weight: 400;
 }
 
 
@@ -38,12 +38,20 @@ a {
 	width: 100%;
 	position: fixed;
 }
-
-.navbar-logo a{
-	font-size: 20px;
-	padding-left: 20px;
-	font-weight: 600;
+.navbar-logo-left {
+	margin-left: 10px;
+	height: 55px;
+	width: 226px;
+	background: url(../images/logo\ copy.png) no-repeat center;
+	background-size: cover;
 }
+
+.navbar-logo {
+	margin-left: 10px;
+	height: 55px;
+	width: 226px;
+}
+
 .navbar-menu {
 	display: flex;
 	list-style: none;
@@ -51,7 +59,7 @@ a {
 	margin-right: 10px;
 }
 .navbar-menu li {
-	padding: 8px 15px;
+	padding: 5px 25px;
 }
 .navbar-menu li :hover {
 	color: rgb(255, 102, 0);
@@ -63,10 +71,7 @@ a {
 	font-size: 24px;
 	color: rgb(255, 102, 0); 
 }
-.navbar-home {
-	color: rgb(255, 102, 0);
-	font-weight: bold;
-}
+
 
 @media screen and (max-width: 768px) {
 	.navbar
@@ -107,8 +112,8 @@ section
 .mainpage
 {
 	color: white;
-	background: linear-gradient( rgba(252, 252, 252, 0.1), 
-	rgba(252, 252, 252, 0.1) ),url(../images/tent-gd319add57_1920.jpg) no-repeat center center fixed;
+	background: linear-gradient( rgb(0, 0, 0, 0.2), 
+	rgba(0, 0, 0, 0.2) ),url(../images/tent-gd319add57_1920.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -118,7 +123,7 @@ section
 .mainheader
 {
 	position: relative;
-	font-family: 'Dela Gothic One', cursive;
+	font-family: 'Poppins', sans-serif;
 	height: 300px;
 	width: 50%;
 	top: 30%;
@@ -127,22 +132,23 @@ section
 }
 .maincamping
 {
-	font-size: 90px;
-	font-weight: 1000;
+	font-size: 120px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
 }
 .subheader
 {
 	position : absolute;
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: 300;
-	top: 45%;
+	top: 55%;
 }
 .main-box
 {
 	position: absolute;
 	text-decoration: none;
-	left: 50%;
-	top: 45%;
+	left: 55%;
+	top: 55%;
 	text-align: center;
 	border-radius: 50px;
 	width: 20%;
@@ -154,7 +160,7 @@ section
 {
 	display: block;
 	color: white;
-	font-size: 17px;
+	font-size: 15px;
 	padding: 8px 15px;
 	margin-left: 10px;
 	text-decoration: none;
@@ -166,26 +172,24 @@ section
 	}
 	.maincamping
 	{
-		font-size: 53px;
-		font-weight: 800;
+		font-size: 80px;
 		margin: 0;
 		padding: 0;
 	}
 	.subheader
 	{
-		font-size: 17px;
-		font-weight: 400;
-		margin-top: -50px;
+		font-size: 25px;
+		margin-top: -40px;
 	}
 	.main-box
 	{
 		position: absolute;
 		text-decoration: none;
 		left: 0%;
-		top: 40%;
-		border-radius: 5px;
+		top: 50%;
+		border-radius: 50px;
 		width: 20%;
-		background-color: rgba(255, 255, 255, 0.932);
+		color: rgb(255, 102, 0);
 
 	}
 
@@ -194,8 +198,8 @@ section
 		display: block;
 		margin: 3px 0;
 		padding: 0;
-		color: black;
-		font-size: 5px;
+		color: white;
+		font-size: 8px;
 		text-decoration: none;
 	}
 }
@@ -203,32 +207,31 @@ section
 @media screen and (min-width: 770px) and (max-width: 1228px) {
 	.maincamping
 	{
-		font-size: 53px;
-		font-weight: 800;
+		font-size: 80px;
 	}
 	.subheader
 	{
-		font-size: 17px;
-		font-weight: 400;
-		margin-top: -50px;
+		font-size: 25px;
+		margin-top: -40px;
 	}
 	.main-box
 	{
 		position: absolute;
 		text-decoration: none;
 		left: 0%;
-		top: 40%;
+		top: 50%;
 		text-align: center;
-		border-radius: 5px;
-		background-color: rgba(255, 255, 255, 0.932);
+		border-radius: 50px;
+		width: 30%;
+		color: rgb(255, 102, 0);
 
 	}
 
 	.main-box a
 	{
 		display: block;
-		color: black;
-		font-size: 10px;
+		color: white;
+		font-size: 15px;
 		margin: 5px;
 		padding: 0;
 		text-decoration: none;
@@ -256,19 +259,20 @@ section
 	margin: 0 auto;
 	margin-top: -10px;
 	width: 55%;
-	font-size: 30px;
-	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 25px;
+	font-family: 'Noto Sans KR', sans-serif;
 	padding-bottom: 10px;
 }
 .abouth1
 {
 	color: black;
-	font-size: 60px;
-	text-align: center;
-	width: 100%;
-	padding: 20px;
+	font-size: 65px;
+	font-weight: 500;
+	padding: 0;
+	margin-left: 17.5%;
 	padding-top: 75px;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing:-5px;
 
 }
 
@@ -276,15 +280,16 @@ section
 	position: relative;
 	float: left;
 	box-sizing: border-box;
-	margin-left: 22.5%;
-	width: 50%;
-	height: 20%;
+	margin-left: 17.5%;
+	width: 60%;
+	height: 25%;
 	background-image: url(../images/about/about1.jpg);
 	background-size: cover;
 	background-position: center;
 
 }
 .box-about1-1{
+	font-family: 'Poppins', sans-serif;
 	float: left;
 	position: relative;
 	box-sizing: border-box;
@@ -295,43 +300,38 @@ section
 }
 .box-about1-1 header
 {
-	font-family: 'Playfair Display', serif;
-	font-size: 40px;
-	font-weight: b;
+	font-family: 'Poppins', sans-serif;
+	font-size: 45px;
 	color: rgb(255, 102, 0);
 	margin: 0;
+	margin-left: 8px;
 	margin-top: 10px;
 	writing-mode: vertical-lr;
 }
-
 .box-about1-1 p
 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 20px;
 	color: rgb(255, 102, 0);
 	margin: 0;
-	margin-left: 5px;
+	margin-left: 20px;
 	margin-top: 10px;
 	writing-mode: vertical-lr;
 }
 
-.box-about2{
+.box-about2-text{
 	clear: both;
 	box-sizing: border-box;
 	margin: 0 auto;
-	width: 55%;
+	width: 100%;
 	height: 3%;
 	padding: 0 auto;
-	margin-top: 10px;
-}
-.box-about2 p
-{
-	width: 100%;
-	font-size: 16px;
-	padding: 0;
-	padding-top: 5px;
-	color:rgb(97, 96, 96);
+	padding-top: 30px;
 	font-family: 'Noto Sans KR', sans-serif;
+}
+.box-about2-text p{
+	font-size:20px;
+	padding-bottom: 15px;
 }
 .about-box-p1
 {
@@ -341,30 +341,31 @@ section
 .equipmentpage
 {
 	background-color: white;
-	height: 160vh;
+	height: 150vh;
 	box-sizing: border-box;
 }
-
-
 .equipment-h1
 {
-	color:rgb(255, 102, 0);;
+	color:rgb(255, 102, 0);
 	font-size: 60px;
 	text-align: center;
 	padding: 20px;
 	padding-top: 50px;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Poppins', sans-serif;
 	margin: 0;
-	
 }
 
 .equipment-p1{
 	color: rgb(78, 78, 78);
-	margin: 0 auto;
-	font-size: 30px;
-	font-family: "jua";
+	margin: 30px auto;
+	font-size: 25px;
+	font-family: 'Noto Sans KR', sans-serif;
 	text-align: center;
-	margin-top: 20px;
+}
+.equipment-p1-highlight 
+{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: bold;
 }
 
 .equipment-image-1f
@@ -379,13 +380,12 @@ section
 	display: flex;
 	width: 33.33%;
 	position: relative;
-	margin-top: 50px;
 }
 .equipment-image-1f-box h1
 {
 	text-align: center;
 	font-size: 35px;
-	font-family: "jua";
+	font-family: 'Noto Sans KR', sans-serif;
 	color: white;
 	position: absolute;
 	top: 50%;
@@ -396,7 +396,7 @@ section
 	opacity: 0;
 }
 .equipment-image-1f-box p {
-	background-color: rgba(72, 73, 72, 0.7);
+	background-color: rgba(0, 0, 0, 0.6);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -429,7 +429,7 @@ section
 {
 	text-align: center;
 	font-size: 35px;
-	font-family: "jua";
+	font-family: 'Noto Sans KR', sans-serif;
 	color: white;
 	position: absolute;
 	top: 50%;
@@ -440,7 +440,7 @@ section
 	opacity: 0;
 }
 .equipment-image-2f-box p {
-	background-color: rgba(72, 73, 72, 0.7);
+	background-color: rgba(0, 0, 0, 0.6);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -470,8 +470,9 @@ section
 .foodpage
 {
 	background-color: rgb(245, 244, 244);
-	height: 150vh;
+	height: 300vh;
 	box-sizing: border-box;
+	margin-top: 50px;
 }
 
 
@@ -481,21 +482,204 @@ section
 	font-size: 60px;
 	text-align: center;
 	width: 100%;
-	padding: 20px;
+	padding: 0 auto;
+	margin: 0 auto;
 	padding-top: 60px;
-	font-family: 'Playfair Display', serif;
+	font-weight: bold;	
+	font-family: 'Poppins', sans-serif;
+}
 
+.food-1f-box-text
+{
+	width: 35%;
+	margin: 0 auto;
+	margin-left: 150px;
+	padding: 0 auto;
+	color: black;
+	float: left;
+	margin-top: 150px;
+}
+.food-1f-box-img
+{
+	width: 15%;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0 auto;
+	margin-top: 150px;
+	color: black;
+	float: left;
+	margin-right: -50px;
+}
+.food-1f-box img
+{
+	margin: 0;
+	padding: 0;
+}
+
+.food-1f-title{
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: -11px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.food-1f-subtitle{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Noto Sans KR', sans-serif;
+	padding-top: 20px;
+	color: rgb(255, 102, 0);
+}
+.food-1f-word{
+	font-size: 15px;
+	color: rgb(107, 105, 105);
+	font-family: 'Noto Sans KR', sans-serif;
+	padding-top: 20px;
+}
+.food-2f {
+	clear: both;
+	margin-top: 50px;
+	margin-left: 150px;
+}
+.food-2f-box-img
+{
+	width: 30%;
+	height: 300px;
+	margin: 0 auto;
+	padding: 0 auto;
+	margin-top: 200px;
+	color: black;
+	float: left;
+}
+
+.food-2f-box-text
+{
+	width: 40%;
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0 auto;
+	margin-left: 110px;
+	padding: 0 auto;
+	color: black;
+	float: left;
+	margin-top: 200px;
+}
+.food-2f-title{
+	font-size: 30px;
+	font-weight: bold;
+	color:rgb(78, 78, 78);
+	margin-top: -11	px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.food-2f-word{
+	font-size: 15px;
+	color: rgb(107, 105, 105);
+	font-family: 'Noto Sans KR', sans-serif;
+	padding-top: 20px;
+}
+
+
+.campsitepage
+{
+	height: 100vh;
+	background: linear-gradient( rgba(252, 252, 252, 0.7), 
+	rgba(252, 252, 252, 0.7) ),url(../images/campsite/back2.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-bottom: -100px;
 }
 
 .campsiteh1
 {
-	color: rgb(255, 102, 0);;
-	font-size: 60px;
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
 	text-align: center;
 	width: 100%;
 	padding: 20px;
-	padding-top: 50px;
-	font-family: 'Playfair Display', serif;
-
+	padding-top: 100px;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
+.campsite-subtitle
+{
+	color: black;
+	font-size: 17px;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.campsite-1f
+{
+	margin: 0 13%;
+	height: 32%;
+}
+
+.campsite-1f-main
+{
+	width: 27%;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0 auto;
+	color: black;
+	float: left;
+	margin-top: 30px;
+}
+.campsite-1f-photo
+{
+	width: 23.33%;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0 auto;
+	margin-top: 60px;
+	color: black;
+	float: left;
+	position: relative;
+}
+.campsite-1f-background {
+	height: 80px;
+	background-color: rgba(8, 8, 8, 0.2);
+	margin-top: -80px;
+}
+
+.campsite-1f-text
+{
+	color: white;
+	clear: both;
+	width: 100%;
+	margin:0;
+	margin-top: -78px;
+	position: absolute;
+	font-size: 17px;
+	padding: 25px 0;
+	background-color: rgb(0, 0, 0, 0.6);
+	box-sizing: border-box;
+	text-align: center;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.campsite-1f-mainbox
+{
+	color: white;
+	font-size: 13px;
+	font-family: 'Noto Sans KR', sans-serif;
+	position: absolute;
+	text-align: center;
+	border-radius: 50px;
+	width: 7%;
+	border: 2px solid white;
+	margin-top: -95px;
+	margin-left: 10px;
+}
+
+.campsite-1f-maintext
+{
+	color: white;
+	font-size: 15px;
+	font-family: 'Noto Sans KR', sans-serif;
+	position: absolute;
+	margin-top: -60px;
+	margin-left: 10px;
+}

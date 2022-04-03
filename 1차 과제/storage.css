@@ -131,3 +131,11 @@ transform: translate( -50%, -50% );
 	font-family: 'Playfair Display', serif;
 	margin: 0;
 }
+
+.foodpage
+{
+	background-color: rgb(245, 244, 244);
+	height: 300vh;
+	box-sizing: border-box;
+	margin-top: 50px;
+}
